@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streamify - Music Web App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="player">
+      <div class="header">
+        <span>Streamify</span>
+      </div>
+      <div class="img">
+        <img src="" id="thumb" alt="Album Art" />
+      </div>
+      <div class="details">
+        <h3 id="title">Title</h3>
+        <p id="musician">Artist</p>
+      </div>
+      <audio id="song"></audio>
+      <div class="time">
+        <span id="start">0:00</span>
+        <span id="end">0:00</span>
+      </div>
+      <input type="range" id="progress" value="0" />
+      <div class="action">
+        <button id="prev">◀</button>
+        <button id="play" class="play">▶</button>
+        <button id="next">▶</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
